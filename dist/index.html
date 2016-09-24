@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class='container-fluid'>
+        <div class='container'>
+            <div class='timer text-center'>
+                <h1>Pomodoro!</h1>
+                <div class='time-digit'>
+                    <span class='hours'>
+                    00
+            </span>
+                    <!--hours-->
+                    <span class='minutes'>
+                   : 00
+ :            </span>
+                    <!--minutes-->
+                    <span class='seconds'>
+                    00
+            </span>
+                    <!--seconds-->
+                </div>
+                <!--time-digit-->
+                <div class='time-select text-center'>
+                    <div class='spinners'>
+                        <div class='spinner1'>
+                            <label id='lable-1' for='spinner'>Session</label>
+                            <input id='spinner' name='value' class='spinner' min='1' value='15'>
+                        </div>
+                        <div class='spinner2'>
+                            <label id='lable-2' for='spinner2'>Break</label>
+                            <input id='spinner2' name='value' class='spinner' min='1' value='5'>
+                        </div>
+                    </div>
+                    <!--spinners-->
+                    <button class='timer-button start-timer'>Start Timer
+                    </button>
+                    <button class='timer-button reset-timer'>Reset Timer</button>
+                </div>
+                <!--time-select-->
+            </div>
+            <!--timer-->
+        </div>
+        <!--container-->
+    </div>
+    <!--container-fluid-->
+    <script src='./main.js' type='text/javascript'></script>
+</body>
+
+</html>

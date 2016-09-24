@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Righteous');
+
+@pacifico: 'Pacifico', cursive;
+@righteous: 'Righteous', cursive;
+
+@primary: #560B86;
+@primary-lighter: #8F03E8;
+@primary-darker: #4A0278;
+@primary-darkest: #281136;
+@orange-accent: #FF9900;
+@secondary: #FFF;
+@accent: #ADFB00;
+
+@font-color: #FFF;
+@boxshadow:  .1em .1em .2em .01em black;
+body{
+    background: @primary;
+}
+.container-fluid {
+    padding: 1em;
+    margin: 1em;
+}
+.container {
+    top: 50%;
+    left: 50%;
+    padding: 5em;
+}
+.timer {
+    padding: 2em;
+    background: @primary-lighter;
+    border-bottom: 1em solid @primary-darkest;
+    border-right: .5em solid @primary-darker;
+    border-radius: 2px;
+}
+
+.time-digit {
+
+    span {
+        font-family: @righteous;
+        font-weight: bold;
+        font-size: 3em;
+        color: @font-color;
+    }
+}
+
+.timer-box {
+}
+
+
+input {
+    height: 1.3em;
+    width: 1.7em;
+    font-size: 2em;
+    text-align: center;
+    font-family: @righteous;
+    margin: .2em;
+    border: none;
+    box-shadow: @boxshadow;
+    background: @accent;
+    color: black;
+    border-radius: .1em;
+
+}
+label {
+    font-family: @righteous;
+    font-size: 2em;
+    color: @font-color;
+}
+h1 {
+    font-family: @pacifico;
+    color: @font-color;
+    font-size: 5em;
+    font-weight: 700;
+    margin: .1em;
+    padding: .1em;
+}
+.timer-button {
+    font-family: @righteous;
+    font-size: 2.5em;
+    background: @accent;
+    border: none;
+    box-shadow: @boxshadow;
+    height: 2em;
+    width: 7em;
+    margin: .1em 1em .1em 1em;
+    border-radius: .1em;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        opacity: .9;
+}
+}
+
+
+.spinner1 {
+    margin-right: 5em;
+    display: inline;
+}
+
+.spinner2 {
+    margin-left: 5em;
+    display: inline;
+}
+
+.time-select {
+    padding: 1em 10em;
+}
+
+.ui-icon {
+    color: @orange-accent;
+    font-size: 3em;
+    font-weight: 600;
+    font-family: @pacifico;
+}
+a:hover, a:focus {
+    outline: none;
+    text-decoration: none;
+    opacity: .9;
+}
